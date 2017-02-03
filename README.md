@@ -1,2 +1,3 @@
 # OS
-Operating System Lab Assignments
+
+Fifth semester course in IIT Kharagpur, Operating System's Lab Assignment codes.
