@@ -15,8 +15,8 @@ int main(int argc,char* argv[]){
 
 	//defining file1 and file2, file1 is the source and file2 is the destination
 	int file1, file2;
-	file1=open(argv[1], O_RDONLY );//read only
-	file2=open(argv[2], O_CREAT | O_WRONLY );//write only but creates file if non existant
+	file1=open(argv[1], O_RDONLY, 0777 );//read only
+	file2=open(argv[2], O_CREAT | O_WRONLY, 0777 );//write only but creates file if non existant
 
 	//if file open returns error, perror prints the specific error message and program terminates
 	if(file1==-1||file2==-1) {
